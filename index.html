@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Title Section -->
+      <div id="title">
+        <h1>Let's Play🎲!</h1>
+      </div>
+
+      <!-- Playground Section -->
+      <div id="playground">
+        <!-- Player 1 -->
+        <div class="child-1">
+          <p>Player 1</p>
+          <img src="./assets/dice6.png" class="dice-1" draggable="false" />
+        </div>
+
+        <!-- Player 2 -->
+        <div class="child-2">
+          <p>Player2</p>
+          <img src="./assets/dice6.png" class="dice-2" draggable="false" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Play Button  -->
+    <div class="play-btn">
+      <button onclick="play()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="25"
+          fill="currentColor"
+          class="bi bi-play"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"
+          />
+        </svg>
+        Play
+      </button>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

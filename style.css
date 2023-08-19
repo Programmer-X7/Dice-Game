@@ -1,0 +1,81 @@
+/* Default styles for larger screens */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'PT Serif', serif;
+    background-color: #181818;
+    color: rgb(22, 219, 154);
+}
+
+#title {
+    text-align: center;
+}
+
+#title > h1 {
+    font-size: 100px;
+    margin: 30px 0;
+}
+
+#playground {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin: 30px 100px;
+    padding: 40px;
+}
+
+.child-1 > p, .child-2 > p {
+    text-align: center;
+    font-size: 25px;
+    padding: 15px;
+}
+
+.play-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.play-btn > button {
+    font-size: 30px;
+    font-family: 'PT Serif', serif;
+    background-color: gold;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 10px;
+    border: none;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    #title > h1 {
+        font-size: 60px;
+    }
+
+    #playground {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .child-1, .child-2 {
+        margin-bottom: 20px;
+    }
+    
+    .dice-1, .dice-2 {
+        width: 160px;
+        height: 160px;
+    }
+
+    .play-btn > button {
+        font-size: 24px;
+    }
+}
